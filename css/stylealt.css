@@ -1,0 +1,154 @@
+/* CSS para tornar o site responsivo */
+
+/* Configurações gerais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos do conteúdo principal */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin: 40px 0;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+section li {
+  flex-basis: calc(33.33% - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+section li:last-child {
+  margin-right: 0;
+}
+
+section a {
+  display: block;
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.2s ease-in-out;
+}
+
+section a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+section p {
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+
+/* Estilos do formulário de contato */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form label {
+  flex-basis: calc(25% - 10px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  flex-basis: calc(75% - 10px);
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+form input[type="submit"] {
+  flex-basis: 100%;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Estilos do rodapé */
+footer {
+  background-color: #ccc;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Media queries para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    margin-top: 20px;
+    justify-content: flex-start;
+  }
+
+  nav li {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+}
